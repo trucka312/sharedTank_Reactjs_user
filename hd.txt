@@ -1,0 +1,22 @@
+auto build
+
+
+git pull
+
+git add .
+git commit -m "Merge huy"
+git push
+npm run build
+
+rm -rf ../zin_customer_web_v2_build/*
+mv ./dist/* ../zin_customer_web_v2_build/
+cd ../zin_customer_web_v2_build
+git add .
+git commit -m "New"
+git push -f
+cd ../zin_customer_web_v2
+
+cd /www/wwwroot/zinv2.ikitech.vn
+git pull
+
+
